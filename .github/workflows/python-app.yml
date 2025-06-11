@@ -36,4 +36,9 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         key: ${{ secrets.SERVER_SSH_KEY }}
         source: "."
-        target: "/ruta/en/tu/servidor"
+        target: "/home/ubuntu/giancitogay"
+        rm: true
+        port: 22
+        timeout: 300
+        strip_components: 1
+        recursive: true
