@@ -28,21 +28,5 @@ jobs:
       run: |
         pytest
 
-    - name: Deploy to server
-      if: github.ref == 'refs/heads/main'
-      uses: appleboy/scp-action@v0.1.7
-      with:
-        host: ${{ secrets.SERVER_HOST }}
-        username: ${{ secrets.SERVER_USER }}
-        key: ${{ secrets.SERVER_SSH_KEY }}
-        source: "."
-        target: "/home/ubuntu/giancitogay"
-        rm: true
-        port: 22
-        timeout: 300
-        strip_components: 1
-        recursive: true 
 
 
-
-        
