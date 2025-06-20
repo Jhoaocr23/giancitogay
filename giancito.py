@@ -19,7 +19,6 @@ def calculadora():
     operacion = input("Elige una operación: ").strip().lower()
     a = float(input("Ingresa el primer número: "))
     b = float(input("Ingresa el segundo número: "))
-
     if operacion == "suma":
         print("Resultado:", suma(a, b))
     elif operacion == "resta":
